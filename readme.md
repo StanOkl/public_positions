@@ -1,3 +1,5 @@
+Replication materials for Oklobdzija, Stan. “Public Positions, Private Giving: Dark Money and Political Donors in the Digital Age.” Research & Politics, (January 2019). doi:10.1177/2053168019832475.
+
 ## List of Files.
 1. public_positions_replication_code.R: Replication code to produce the figures in the paper.
 2. public_position_rp.Rmd: Rmarkdown file to produce the entire paper, including calculations done in text.
