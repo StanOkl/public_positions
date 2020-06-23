@@ -1,0 +1,474 @@
+---
+title: 'Public Positions, Private Giving:'
+subtitle: 'Dark Money and Political Donors in the Digital Age.'
+author: 'Stan Oklobdzija^[PhD Candidate, Department of Political Science. UC San Diego]'
+header-includes:
+- \setlength\parindent{24pt}
+- \usepackage{indentfirst}
+- \usepackage{float}
+- \usepackage{graphicx}
+
+output: 
+  pdf_document:
+    keep_tex: true
+linestretch: 2 
+bibliography: DarkMoney.bib
+
+---
+
+\begin{center}
+
+`r format(Sys.time(), '%B %d, %Y')`  \\
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE)
+pdf.options(useDingbats = TRUE)
+```
+
+\end{center}
+
+**Abstract:** Dark money---campaign funds raised by 501(c)(4) designated non-profit corporations whose donors are exempt from
+disclosure---has become an increasingly large fraction of outside spending in American elections at both the state and
+federal level. This paper makes use of the only publically available donor list for a dark money group in existence today--that of "Americans for Job Security," who contributed \$11 million to two conservative leaning ballot initiative campaigns in California during the 2012 elections. In comparing the ideological scores of donors of this dark money group to traditional donors to the two conservative propositions, I find a strong liberal tilt of donors to Americans for Job Security--indicating a social pressures motivation behind concealing one's donation via a dark money group. These results also show disclosure laws have an effect on a donor's calculus to contribute to a political cause. 
+
+\newpage
+
+
+##Introduction
+
+When the 2010 \emph{Citizens United v. FEC} decision revolutionized the
+way American political campaigns were financed, the result was not just
+a sharp increase in the quantity of money in politics but a dramatic
+decrease in how much American voters could learn about it. In the
+election cycles that followed the decision, a new form of
+political spending began to emerge as a force in American elections.
+"Dark money," political spending by IRS designated 501(c)(4)
+non-profit groups, exploded as a major funder of political campaigns at
+all levels of American government. These groups are allowed to spend
+money to influence an election, but don't have to disclose their donors
+with the same rigor traditional political groups such as PACs or parties are
+subjected to. Due to a legal standard upheld by the
+1958 Supreme Court decision in \emph{NAACP v. Patterson}, non-profits are not required by law to disclose their funders or membership lists
+[see @Overby2012]. 
+
+
+The new proliferation of anonymous money in American politics has
+important implications for not only theories of political participation
+but for normative theories on campaign finance disclosure and its effect
+on the electoral process. Dark money brings new challenges to the
+established literature around both social influence in political
+participation and voters' use of information shortcuts to inform their
+choices and tune their own preferences to those of a cause or candidate.
+Further, donating money to a campaign as a form of political engagement
+may be altered by the option of anonymous giving in order to avoid any
+of the social pressures once faced by voters in the days before the
+Australian Ballot.
+
+
+This article takes advantage of a rare and unique disclosure in the opaque world of high-dollar campaign finance. Analyzing the only public list of dark money donors currently in existence, I utilize publicly available data to uncover the names of donors to a multi-million dollar campaign associated with the conservative position on two California ballot initiatives during the 2012 election. "Americans for Job Security"--a 501(c)(4) political nonprofit affiliated with the Koch brothers' network of independent expenditure groups [@novak_maguire_2013]--raised \$11 million for the express purpose of defeating a tax-increase, (Proposition 30), and hindering union political fundraising abilities via a "paycheck protection" measure, (Proposition 32). Having uncovered the identities of dark money donors to the Americans for Job Security effort in California, I compare the ideological scores of these clandestine donors to traditional donors to both initiative campaigns and find donors giving to the dark money effort were significantly more liberal than those who gave to these conservative initiative campaigns through traditional, transparent channels. Like other studies of clandestine organizations [e.g. @Skarbek2011; @McMillan2004], this happenstance disclosure of such a group's inner-workings lets us assess the motivations of these financiers whose combined efforts in 2012 Federal elections totaled at least \$313 million. 
+
+
+The disconnect between the "public" pattern of giving when donating transparently and the "private" support for this seemingly incongruous ideological position speaks to many theories about both political behavior in social settings and the impact of disclosure on money in politics. Were a donor's ideology the sole motivating factor that influenced one's political giving, we would expect to see no divergence in the ideological profiles of transparent donors to these two initiative campaigns and the funders of Americans for Job Security. The disconnect between the public ideology of these dark money donors and their clandestine giving, however, indicates that other pressures beyond one's own ideological convictions motivate political participation as expressed by political giving. 
+
+More broadly, the major overhaul of campaign finance law that culminated with the Supreme Court's 2010 decision in *Citizens United v. FEC* have given rise to a new era of anonymous giving in American politics unseen since the passage of the Federal Election Campaign Act in 1971. Coupled with this are advances in technology that have made uncovering an individual's political giving, and more importantly, publishing that information, rather trivial affairs. If dark money is an refuge for financiers of controversial political opinions, (with the definition of "controversial" shifting radically between communities), then certain large swaths of political money are "going underground." This trend would have serious implications for not just latent-measures of ideology calculated from political giving, but also for voters who use the financial backers of a candidate or initiative as a cue in deciding where to cast their ballot. 
+
+
+##Campaign Money, Donors and Disclosure
+
+
+The dilemma advanced by the advent of dark money lies at a fascinating intersection of the "social pressures" literature, the literature on disclosure and in the literature about donor motivations. Though past research has examined the effect of social settings on political preference formation [@Klar2014], political tolerance [@Mutz2002] and self-reported voting behavior [@Karp2005], the influence of social pressures on political giving is an area as of yet unstudied. 
+
+
+@Francia2003 provides the best taxonomy of donor motivations. Drawing from a survey and numerous interviews, the authors categorize donor motivations--with "investors" seeking some sort of tangible gain from their donation, "ideologues" give to advance some personal belief or policy goal and "intimates" simply give to their friends and associates. The survey the authors fielded is particularly illuminating as it demonstrates all donors are not motivated by the same impulses.
+
+
+Disclosure provides an interesting complication for ideological givers. In the calculus advanced by @Ansolabehere2003, political contributions merely reflect consumption and participation. Yet were the calculus so simple, why would donors go to such great lengths to hide their contributions? In describing the foundation of "Crossroads GPS", a 501(c)(4) created by GOP consultant Karl Rove to compliment his existing super PAC "American Crossroads", @Vogel2014 relates an interview with a ranking member of the organization who said "...some donors didn't want to be disclosed, and therefore a (c)4 was created" (p. 53). 
+
+
+The fact that one's political contributions may expose them to negative consequences is perhaps a better explanation as to the rise of dark money. For instance, anecdotal accounts from past elections in California show that social pressures may be at work within the realm of political giving. Donors to California’s Proposition 8, a gay marriage ban on the 2008 general election ballot that was ultimately successful, are an often cited example of donors facing real economic consequences for their political giving. According to @Johnson2010 :
+
+>An enterprising and anonymous programmer mashed up the names and geographic locations of the donors with Google maps, producing www.eightmaps.com, a site where any visitor could see who in what neighborhoods contributed to the campaign. As a result many individual supporters were targeted with insults, threats and boycotts.
+
+
+While the exact scale of this backlash is impossible to quantify, news accounts point to several examples of businesses being boycotted and people forced from their jobs because of their donations in support of Proposition 8. For instance, Scott Eckhern, the artistic director of the California Musical Theater, was forced to resign after it became known that he’d donated \$1,000 to the anti-gay marriage initiative [@McKinley2008]. As one of Eckhern’s counterparts at another theater commented “That a man who makes his living exclusively through the musical theater could do something so hurtful to the community that forms his livelihood is a punch in the stomach” [@McKinley2008]. Because of musical theater’s association with the LGBT community, the fact that someone intimately involved in its production would donate to a cause antithetical to the interests of that community inspired much of the reputational costs to Eckhern.
+
+
+##Why Dark Money?
+
+Coined in 2010 by Bill Allison of the Sunlight Foundation^[The term was first used in this blog post from the Sunlight Foundation: http://sunlightfoundation.com/blog/2010/10/18/daily-disclosures-10/], the term “dark money” refers to certain IRS designated non-profit groups that exist in a regulatory limbo opened by the 2007 Supreme Court case *Wisconsin Right to Life v. FEC* [see @Eskridge2007 for a discussion of the case; and @Beckel2016 for its implications on the spread of dark money]. While this decision opened the tap for these 501(c)(4) groups, (their designation in the tax code), to donate money to political causes, the flood was unleashed by the twin cases of 2010’s *Citizens United v. FEC* and *Speech Now v. FEC*. According to an analysis by the Center for Responsive Politics, a non-partisan think tank monitoring campaign finance, the amount of dark money spent in federal elections has been increasing exponentially since 2010, (see Figure 1), with spending in the 2014 midterms surpassing the dark money totals of both the 2012 congressional races and topping the 2010 midterms by about \$30 million [@Maguire2014]. The 2016 election saw at least \$178 million in dark money spending with most of it aimed at Congressional races and 76 percent of that amount coming from conservative groups [@Maguire2016]. These numbers, however, are merely an estimate as they represent only spending that falls within certain time-frame prior to an election that must be disclosed to the FEC. In actuality, the number is likely much higher.  
+
+
+```{r,echo=FALSE, message=FALSE, results='hide', fig.cap='Estimated Dark Money Spending. Source: CRP.',}
+library(ggplot2)
+library(data.table)
+library(blscrapeR)
+
+years <- seq(2000,2016, by=2)
+
+all_ie <- c(33.8, 16.7, 63.9, 37.8,143.7,205.5,1000,549.4,1400)
+
+dm <- c(11.21,4.07,5.88,5.17,102.43,138.99,313.51,178.03,178.3)
+
+dm_tots <- data.frame("year"=years, "dm"=dm, "ie"=all_ie)
+
+cpi <- inflation_adjust(base_year = 2018)
+
+cpi <- cpi[cpi$year %in% 2000:2018,]
+
+cp_dm <- merge(dm_tots, cpi, by="year")
+
+cp_dm$dm_ia <- cp_dm$dm/cp_dm$adj_value
+
+cp_dm$ie_ia <- cp_dm$ie/cp_dm$adj_value
+
+dm_tots <- melt(cp_dm, id.vars=c("year") )
+
+dm_tots <- dm_tots[dm_tots$variable %in% c("dm_ia","ie_ia"),]
+
+#pdf("dm_ies.pdf", height=8, width=10)
+ggplot(dm_tots, aes(x=year, y=as.numeric(value), label=value, color=variable)) + geom_line(size=1.5, aes(linetype=variable)) + theme_bw() +
+  scale_y_continuous("Total Spending (Millions of 2018 $)",labels=scales::dollar) + scale_x_continuous("Year", breaks=years) +
+  scale_linetype_discrete(name="Type of Spending", labels=c("Dark money","All IE's")) + scale_color_discrete(name="Type of Spending", labels=c("Dark money","All IE's"))+
+  theme(legend.position ="bottom")
+#dev.off()
+```
+
+
+##Proposition 30 and Proposition 32
+
+
+As it had done for about the last 100 years, California sent a raft of initiatives to voters during the 2012 General Election. Among them were Proposition 30 and 32, a plan to raise taxes and a plan to curb the political spending of unions respectively. Both initiatives were hotly contested with about $190 million spent on both sides of each initiative campaign^[According to the National Institute of Money in State Politics. Data accessed on Oct. 7, 2014 at http://www.followthemoney.org/entity-details?eid=13690362]. Both propositions neatly cleaved California’s powerful special interest groups along ideological lines, with Democratic allied unions supporting Proposition 30 and opposing 32 and Republican business groups taking the opposite tack. Ultimately, voters passed the tax increase and defeated the union fundraising restrictions by wide margins in each. 
+
+
+Like many elections post *Citizens United*, California’s 2012 general election also saw an explosion of dark money spending. In particular, one $11 million donation to fund the opposition to Proposition 30 and facilitate passage of Proposition 32 caught the eye of California regulators. Just days before the November election date, the Fair Political Practices Commission, California’s equivalent of the Federal Elections Commission, sued “Americans for Responsible Leadership,” a dark money group based in Virginia, to force the group to turn over a list of donors [@Barker2014]. While this donation was legal under federal elections laws revised following *Citizens United*, a California law passed in May of that year made donor disclosure mandatory if donors knew they'd be contributing to a political cause [@Megerian2012]. The case wound its way up the judicial totem pole until the California Supreme Court forced the group to hand over its records on Nov. 4, 2012, just two days before voters were to go to the ballot box. 
+
+
+While the results of the lawsuit were unremarkable for average voters—the funders of Americans for Responsible Leadership, “turned out to be other nonprofits, whose individual contributors remained secret,” according to the *Los Angeles Times*, [@Megerian2012]—buried in the case file was a partially redacted list of 136 donations to "Americans for Job Security," the dark money group where the funds spent in the California races originated. A dark money powerhouse nationwide, Americans for Job Security, a Virginia-based 501(c)(4) nonprofit, made about $16 million worth of independent expenditures in federal elections during the 2012 cycle, according to the Center for Responsive Politics, making it the fourth most "active" dark money organization in that election. A representative from Americans for Job Security worked with two California political consultants to raise money through his organization, specifically noting in solicitations that donor identities would be "non-reportable," according to court documents.
+
+
+![A partial list of the Americans for Job Security donor list obtained via a Public Records Act request by the author to the California Fair Political Practices Commission.](Snip of Donor List.PNG)
+
+
+I was able to obtain this list from the California Fair Political Practices Commission via a request under California’s Public Records Act in November of 2013. Court documents and reporting by news outlets such as the Los Angeles Times, the Huffington Post and the Center for Responsive Politics [see @York2013; @Blumenthal2013; @Novak2013], indicate this is a full accounting of the donors giving money to Americans for Job Security for these two California campaigns. Further, as illustrated by Figure 3, most of these donations came from other California residents, lending further veracity to this claim.
+
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='Dots indicate the zipcode listed for an AJS donor.', message=FALSE, results='hide', warning=FALSE}
+
+library(zipcode)
+library(ggmap)
+
+zips <- read.csv("IncomeExpenseSummaryAJS.csv")
+
+data(zipcode)
+
+ajs_zips <- merge(zips, zipcode, by.x='zips', by.y='zip')
+
+usa <- map_data("state")
+
+g <- 
+  ggplot(data=usa) + 
+  geom_polygon(aes(x = long, y = lat, fill = region, group = group), fill="grey", color = "white") + 
+  geom_point(data=ajs_zips, 
+             aes(x=longitude, y=latitude), colour="Red", 
+             fill="Red",pch=21, size=1, alpha=I(0.7)) + 
+  coord_fixed(1.3) +
+  guides(fill=FALSE)   + theme_nothing()
+g
+
+```
+
+
+Decoding the names proved an arduous but ultimately achievable feat. First, I matched the provided zip code and partial street addresses, (see Figure 2), with donor databases made available by the California Secretary of State’s Office and the Federal Elections Commission. Matching the first names provided in many of the cells from the Americans for Job Security list, I was able to find corresponding public records that included the donors full name, (e.g. from home purchases, Securities and Exchange Commission filings or business websites.) The result was 83 unique donations, (the other 53 donations were too fully redacted to decipher the donor’s identity with any certainty,) made by 66 unique donors, (i.e. several donors gave money more than once.)
+
+
+In July 2016, Hedge Clippers [@HedgeClippers2016]--a non-profit news site allied with several California unions and progressive organizations--published a more complete list that largely corresponded with my own, but included an additional contributor (66 in my analysis vs. 67 in the Hedge Clippers report.) The results of the Hedge Clippers analysis were reported on by the Los Angeles Times and San Francisco Chronicle [see @Blume2016; @Gutierrez2016]. As of this writing, these results have gone unchallenged in either the media or in court--lending further validity that the donors named were indeed true donors to Americans for Job Security. 
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='Size of AJS Donations: Redacted vs. Non Redacted', message=FALSE, results='hide', warning=FALSE}
+
+##AJS names
+
+redact <- read.csv("darkmoney_redact_vs_nonredact.csv")
+
+###create redaction dummy variable
+
+redact$redacted <- ifelse(grepl("XXX",redact$Actual.Name)==T, 1,0)
+
+###density plot of AJS donor ideology
+
+library(ggplot2)
+
+ggplot(redact, aes(x=factor(redacted), y=Amount, fill=factor(redacted))) + 
+  geom_bar(stat="sum") +
+  theme(legend.position = "none") +
+  scale_y_continuous(labels=scales::dollar) + theme_bw()+
+  scale_x_discrete(name = "Redacted vs. Unredacted Donations",
+                   labels=c("Unredacted","Redacted"))+
+  theme(legend.position = "none")
+
+```
+
+Given that `r format(53/136 * 100, digits=4)` percent of donations to Americans for Job Security were too redacted in my analysis to discern the identity of the giver, questions over selective censorship naturally arise^[The actual document can be viewed online at the following address, courtesy of the Huffington Post: http://big.assets.huffingtonpost.com/IncomeExpenseSummaryAJS.pdf]. However, as Figure 4 shows, the vast majority, some \$23.4 million or about 83 percent of the \$28.4 million raised by Americans for Job Security was able to be linked to a donor. Nonetheless, concerns about censorship and selection bias are addressed in the appendix. 
+
+`r ajs_names <- read.csv("ajs_names.r.csv")`
+
+After combining the identified donors from both my research and from the Hedge Clippers report, their political leanings could then be discerned by matching their names to the Database of Ideology, Money in Politics and Elections [see @Bonica2014]. Bonica’s spatial ideological scores use campaign contributions to derive the ideological positioning of a donor based on which candidates that donor contributed to, making it ideal for this analysis. Matching based on names and zip codes produced ideological scores for all `r length(unique(ajs_names$Name))` unique individual donors. 
+
+
+While the anti-Proposition 30 campaign and the pro-Proposition 32 campaigns were distinctly conservative affairs, donors to Americans for Job Security spanned the ideological spectrum. A density plot of the ideology scores, (see Figure 5), shows two distinct clusters within the donors to Americans for Job Security, indicating that donors to this dark money group were not ideological moderates, but distinct clusters of liberal and conservative donors. In Bonica’s coding of ideology, liberal donors are assigned ideological scores less than zero and conservatives the opposite.
+
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='AJS Donor Ideologies vs. Transparent Donors. Vertical line indicates median value.', message=FALSE, results='hide', warning=FALSE}
+library(ggplot2)
+
+##AJS names
+
+ajs_names <- read.csv("hc_donor_table.csv")
+
+##fuzzy merge the DM names to their bonica scores
+#load fuzzy match results 
+
+ajs_names <- read.csv("ajs_names.r.csv")
+
+ajs_names$bon_name <- toupper(ajs_names$bon_name)
+
+##load merged ajs data
+merge_ajs <- read.csv("merge.ajs_names_73.csv")
+
+merge_ajs$contributor.cfscore <- merge_ajs$contributor_cfscore
+
+merge_ajs <- merge_ajs[!is.na(merge_ajs$contributor.cfscore),]
+
+
+
+##load open donors with matched cfscore
+
+open_dons <- read.csv("open_donors.csv")
+
+cf_32 <- open_dons[open_dons$Target=="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+cf_30 <- open_dons[open_dons$Target!="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+Yes_32 <- open_dons[open_dons$Target=="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+No_30 <- open_dons[open_dons$Target!="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+#Donors who donated both openly and clandestinely
+
+Both32 <- merge(Yes_32, ajs_names, by.x="Name.x", by.y="bon_name")
+Both30 <- merge(No_30, ajs_names, by.x="Name.x", by.y="bon_name")
+##3 donors donated to the DM groups and openly 
+
+
+##label donors
+
+merge_ajs$ID <- 'Americans for Job Security'
+cf_30$ID <- 'Proposition 30 Donors'
+cf_32$ID <- 'Proposition 32 Donors'
+
+u.merge_ajs <-  merge_ajs[complete.cases(merge_ajs[,9]),]
+u.cf_30 <- cf_30[complete.cases(cf_30[,33]),]
+u.cf_32 <- cf_32[complete.cases(cf_32[,33]),]
+
+u.merge_ajs <- u.merge_ajs[!duplicated(u.merge_ajs$Name),]
+u.cf_30 <- u.cf_30[!duplicated(u.cf_30$index),]
+u.cf_32 <- u.cf_32[!duplicated(u.cf_32$index),]
+
+
+cfscore <- subset(u.merge_ajs, select=c(contributor.cfscore, ID))
+cfscore <- rbind(subset(u.cf_30, select=c(contributor.cfscore, ID)),
+                 subset(u.merge_ajs, select=c(contributor.cfscore, ID)),
+                 subset(u.cf_32, select=c(contributor.cfscore, ID)))
+
+#median values
+vline.dat <- data.frame("ID"=levels(factor(cfscore$ID)), "vl"=c(median(cfscore$contributor.cfscore[cfscore$ID=="Americans for Job Security"]), median(cfscore$contributor.cfscore[cfscore$ID=="Proposition 30 Donors"]),                                                  median(cfscore$contributor.cfscore[cfscore$ID=="Proposition 32 Donors"])))
+
+##visualtion of AJS vs open donors
+ggplot(cfscore, aes(contributor.cfscore, fill = ID)) + 
+geom_density(adjust=2/5  ,alpha = 0.2) + 
+  xlab("Donor CF Scores, (Neg. Values = More Liberal)") + 
+  theme(legend.position="none") +
+  geom_vline(data=vline.dat, aes(xintercept=vl), linetype="dashed")  +
+  facet_grid(ID ~ .) 
+
+```
+
+`r all_donors <- read.csv("other_2011.csv", stringsAsFactors=F)`
+
+
+Using the same procedure to attach ideological scores to donors giving to Americans for Job Security, I then matched donor information to the No on Proposition 30 campaign and Yes on Proposition 32 campaign to Bonica’s ideology scores. Of these donors, `r sum(!is.na(cf_32$contributor.cfscore[ !duplicated(cf_32$Name.x)]))` of `r length(unique(all_donors$DonorNameNormalized[grepl("Proposition 032",all_donors$Target, ignore.case = T)==T & all_donors$Position=="SUPPORT"]))` unique donors to the Yes on Proposition 32 campaign were matched with a Bonica score as were `r sum(!is.na(cf_30$contributor.cfscore[ !duplicated(cf_30$Name.x)]))` of `r length(unique(all_donors$DonorNameNormalized[grepl("Proposition 030",all_donors$Target, ignore.case = T)==T & all_donors$Position=="OPPOSE"]))` donors to the No on Proposition 30 campaign. Viewing the density plot of all donor ideologies, (Figure 5), the disconnect between Americans for Job Security and those donating in the open becomes even more evident.
+
+
+Taking the analysis further, a two-tailed t-test shows a statistically significant difference in the ideological mean of the Americans for Job Security donors, (M=`r signif((t.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$estimate[2], 3)`, SD=`r signif(sd(merge_ajs$contributor.cfscore, na.rm=T),3)`) and disclosed donors to the No on Proposition 30 campaign, (M=`r signif((t.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$estimate[1],3)`, SD=`r signif(sd(cf_30$contributor.cfscore, na.rm=T),3)`); $t(`r signif((t.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$parameter, 3)`)=`r signif((t.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r signif((t.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value, 3)`$. Similarly, Americans for Job Security and disclosed donors to the Yes on Proposition 32, (M=`r signif((t.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$estimate[1],3)`, SD=`r signif(sd(cf_32$contributor.cfscore, na.rm=TRUE),3)`) had statistically significant mean ideologies; $t(`r signif((t.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$parameter,3)`)=`r signif((t.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r signif((t.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value,3)`$.
+
+
+Further, the results from a two-sample Kolmogorov-Smirnov test allow us to reject the null hypothesis that those who gave to Americans for Job Security and those who gave openly come from the same population of donors in the case of the No on Proposition 30; $D=`r signif((ks.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r ks.test(cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided")$p.value`$; and the Yes on Proposition 32 campaigns; $D=`r signif((ks.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r signif((ks.test(cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value,3)`$. Concerns about whether this difference is motivated by a bias in the Bonica scores introduced by large donors who donate widely to ideologically disparate causes is addressed further in the appendix. 
+
+<!--
+Because one can never be sure why some donors had all their information redacted while others didn’t, censoring issues may be present in the dataset. Problematically, if a systematic component to the censoring existed, the results presented above would be biased and unreliable. While one cannot be 100 percent certain, court rules against censoring other  than to protect personal information and the appearance of the censoring seems to indicate that the censoring is random and thus not biasing the results in any way that undermines the analysis.
+
+However, if the bias were selective for some reason, there’s reason to believe that the ideological distribution of Americans for Job Security would be even more liberal than the results above. That’s because although 68 entries lack enough unredacted information to ascertain the donor’s identity, only five entries lack a zip code. Because one often lives in areas with others of the same ideological alignment [e.g. @Bishop2009; @Gelman2009], one can make a reasonable assumption about the liberal or conservative leaning of these donors. Assuming all 68 missing entries were unique donors, a full 76.9 percent lived in a zip code represented by a Democrat in the U.S. Congress. Were the five completely redacted entries unique donors from Republican Congressional districts, then 71.7 percent would be represented by Democrats. 
+![](HeatMap.png)
+-->
+
+
+##Conclusion:
+`r plot.dat <- read.csv("plot.dat.csv")`
+
+Are dark money non-profits utilized to avoid backlash against donors for giving to causes antithetical to their publicly stated beliefs? In this case study of Americans for Job Security, the answer appears to be yes. Donors who in previous elections had given mostly to liberal candidates were able to funnel money into a resoundingly conservative cause without fear of discovery. While there were many conservatives giving to Americans for Job Security whose financial support for a campaign opposing a tax increase and hobbling unions' political fundraising efforts would raise few eyebrows, the group also contained enough liberals whose participation may have exposed them personally to social backlash. While a perfect counter-factual isn't available due to the intensely clandestine nature of dark money, only `r unname(table(subset(plot.dat$candidate_cfscore, plot.dat$id!="Americans for Job Security") < 0)["TRUE"])` donations were made to liberal candidates by transparent donors to the No on 30 and Yes on 32 campaigns between 2008 and 2012 out of a total `r format(nrow(subset(plot.dat, plot.dat$id!="Americans for Job Security")), big.mark = ",")` donations. Compare this to the `r format(unname(table(subset(plot.dat$candidate_cfscore, plot.dat$id=="Americans for Job Security") < 0)["TRUE"]), big.mark=",")` of a total `r format(nrow(subset(plot.dat, plot.dat$id=="Americans for Job Security")), big.mark=",")` by the Americans for Job Security donors and a stark distinction emerges. While not every donor giving to Americans for Job Security generally funded liberal causes or candidates, a large enough proportion did in order to shift the mean to the left. 
+
+<!--
+The nascent literature surrounding “dark money” primarily takes aim at the host of disclosure laws that dark money groups circumvent and offers policy prescriptions to strengthen the federal transparency regime. Some advocate for extending laws that forced disclosure of IRS-designated 527 groups, (made famous by “Swift Boat Veterans for Truth” in the 2004 presidential campaign), to 501(c) groups [@Ferguson2013]. Others call for the IRS to more rigorously enforce existing disclosure requirements for groups that engage in political activities [@Potter2013]. Still others have theorized that while many corporations have utilized dark money groups to attempt to influence elections, some of these groups may be simply be individuals hoping to turn their political giving into a tax write-off [@Bonica2014a]. Others still see the rise of dark money signaling a rise of “shadow parties,” groups which perform tasks formerly relegated to the two political parties, but without the legal boundaries of the latter [@Gerken2014].
+-->
+
+In this case study, liberal donors giving to these ardently conservative causes may have simultaneously feared backlash against their businesses or their reputations, while at the same time preferring the policy outcomes these two initiatives would bring. For these donors, dark money offered a convenient out. By donating behind a veil of secrecy, they were able to avoid the repercussions their giving might have brought if done through traditional and transparent channels. The result is a rolling back of the clock to the more opaque days of campaign finance disclosure—when donations were made more or less free of public scrutiny. 
+
+
+The rise of dark money also calls into question our spatial notions of ideology when it comes to political donors. Because we assume that donors donate honestly and that donations are sincere statements of ideological preference, one is able to use donors as bridges to compare the ideologies of politicians in various governing bodies [@Bonica2014]. However, what happens to this assumption when the public giving of donors varies drastically from the type of giving that goes on behind the veil of secrecy dark money groups afford? Furthermore, if the decision to give anonymously via a dark money group is biased systematically, (e.g. only liberal donors give anonymously to conservative ballot initiatives), what does this do to the ideal point estimates that rely on political giving as their bridge points? If it is precisely the type of large-scale donors that would both donate to state and federal races that are choosing also to donate to dark money organizations, perhaps then the ideal point estimates that lean so heavily upon them are unreliable. 
+
+
+Dark money is by definition obscure and by design difficult to trace. The data for this study was only available due to a happy accident in poor redaction, not some sort of transparency push by either the California state or Federal governments. While illuminating, we have no real way of knowing how the ideological composition of Americans for Job Security compares to the myriad other dark money groups that have operated since the 2012 election. This fact is not only troubling for the generalizability of these results, but troubling in the sense that a large percentage of spending in American elections can pass from donor to campaign and face absolutely zero scrutiny along the way. 
+
+##Appendix
+
+
+##Selection Bias:
+
+
+While selective censorship of this data is a concern, there are several reasons to believe that any censorship present in the data does not affect the conclusions drawn from this analysis. First, the geographic distribution of the donors whose names were fully redacted, (see Figure 3,) mirrors that of their unredacted counterparts. Given past work on spatial polarization and the correlations between the political ideologies of one's neighbors and themselves [e.g. @Gelman2009], the fact that the fully redacted donations do not cluster in some conservative area of either California or the nation indicate that ideology was not used as a defining characteristic to censor this data. 
+
+
+However, if the bias were selective for some reason, there’s reason to believe that the ideological distribution of Americans for Job Security would be even more liberal than the results above. That’s because although 68 entries lack enough unredacted information to ascertain the donor’s identity, only five entries lack a zip code. Assuming all 68 missing entries were unique donors, a full 76.9 percent lived in a zip code represented by a Democrat in the U.S. Congress. Were the five completely redacted entries unique donors from Republican Congressional districts, then 71.7 percent would be represented by Democrats. Therefore, while the exact redaction strategy is only known to the member of Americans for Job Security's counsel responsible for blacking out the names, it is safe to assume that the effects to be reported in the following pages are, if anything, *understated*.
+
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='Addresses of AJS Donors: Redacted, (triangle) vs. Non Redacted, (circle)', message=FALSE, results='hide', warning=FALSE}
+
+##AJS names
+
+redact <- read.csv("darkmoney_redact_vs_nonredact.csv")
+
+###create redaction dummy variable
+
+redact$redacted <- ifelse(grepl("XXX",redact$Actual.Name)==T, 1,0)
+
+###density plot of AJS donor ideology
+library(zipcode)
+library(ggmap)
+library(ggplot2)
+
+data(zipcode)
+
+ajs_zips <- merge(redact, zipcode, by.x='Zip', by.y='zip')
+
+usa <- map_data("state")
+
+g <- 
+  ggplot(data=usa) + 
+  geom_polygon(aes(x = long, y = lat, fill = region, group = group), fill="grey", color = "white") + 
+  geom_point(data=ajs_zips, 
+             aes(x=longitude, y=latitude, color=factor(redacted),
+                 fill=factor(redacted),pch=factor(redacted)), size=2) + 
+  coord_fixed(1.3) +
+  theme_nothing()
+
+merge_ajs <- read.csv("merge.ajs_names_73.csv")
+merge_ajs$contributor.cfscore <- merge_ajs$contributor_cfscore
+
+
+```
+
+Most problematically, it is possible that the Bonica scores for the dark money donors suffer from a selection bias, as their contributions to a conservative cause isn't taken into account due to the clandestine nature of their giving. Due to the way spatial measures of ideology are calculated based on past contributions [see @Bonica2014], the exclusion of the tie between the dark money donors and those giving to the No on 30 and Yes on 32 campaigns would by definition give the dark money donor a more liberal tilt absent other information about past giving. An examination of the data, however, shows how to allay this fear. 
+
+
+First, of the `r length(!is.na(merge_ajs$contributor.cfscore))` unique contributors to Americans for Job Security who have made a donation in the 2008, 2010 or 2012 cycle and thus received a Bonica score, (computational limitation prevented me from attempting to match donors from beyond these cycles), `r length(which(merge_ajs$contributor.cfscore < 0))` have a Bonica score less than zero--indicating a generally liberal record of donations. More convincing evidence comes from laying the ideological scores of the candidates each group gave to. Because each candidate receives so many more contributions from so many distinct contributors than does each donor give to distinct candidates, the candidate Bonica score is a much more stable measure of ideology than is a contributor score. If one looks then to what type of candidates each particular set of donor is giving to during the three aforementioned cycles, we can come up with a more stable look at the ideological profiles of the dark money donors versus their transparent counterparts. As Figure 6 clearly demonstrates, donors to Americans for Job Security--the dark money organization--gave to a distinct set of liberal candidates that those giving transparently to the two initiative campaigns the dark money organization supported. Thus, we can be confident that the results of the above difference-of-means tests aren't merely the results of selective censorship, but rather reflect an actual difference in ideology, as least at measured by political giving.
+
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='Ideological Scores of Candidates Receiving Money from AJS vs. Transparent Donors. Vertical line equals median value.', message=FALSE, results='hide', warning=FALSE}
+library(ggplot2)
+plot.dat <- read.csv("plot.dat.csv")
+
+##median value line
+vline.dat <- data.frame("id"=levels(factor(plot.dat$id)), "vl"=c(median(plot.dat$candidate_cfscore[plot.dat$id=="Americans for Job Security"], na.rm=T), median(plot.dat$candidate_cfscore[plot.dat$id=="No on 30/Yes on 32 Donors"], na.rm=T)))
+
+ggplot(plot.dat, aes(candidate_cfscore, fill=id)) + geom_density(alpha=.45) + 
+  xlab("Candidate CF Scores")+theme(legend.position="none") + scale_fill_discrete("") +
+  ylab("Density") + 
+  geom_vline(data=vline.dat, aes(xintercept=vl), linetype="dashed") + 
+  facet_grid(id ~ .)
+
+```
+
+
+
+##Large Donors
+
+
+
+```{r,fig.width=7, fig.height=6, echo=FALSE, fig.cap='AJS Donor Ideologies vs. $500+ Transparent Donors. Vertical line indicates median value.', message=FALSE, results='hide', warning=FALSE}
+
+##AJS names
+
+ajs_names <- read.csv("hc_donor_table.csv")
+
+##load merged ajs data
+
+merge_ajs <- read.csv("merge.ajs_names_73.csv")
+merge_ajs <- merge_ajs[!is.na(merge_ajs$contributor_cfscore),]
+
+merge_ajs$contributor.cfscore <- merge_ajs$contributor_cfscore
+
+open_dons <- read.csv("open_donors.csv")
+
+cf_32 <- open_dons[open_dons$Target=="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+cf_30 <- open_dons[open_dons$Target!="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+Yes_32 <- open_dons[open_dons$Target=="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+No_30 <- open_dons[open_dons$Target!="PROPOSITION 032 - PROHIBITS POLITICAL CONTRIBUTIONS BY PAYROLL DEDUCTIONS. PROHIBITIONS ON CONTRIBUT",]
+
+
+
+##label donors
+
+merge_ajs$ID <- 'Americans for Job Security'
+cf_30$ID <- 'Proposition 30 Donors'
+cf_32$ID <- 'Proposition 32 Donors'
+
+b.cf_30 <- subset(cf_30, cf_30$TransactionAmount >= 500)
+b.cf_32 <- subset(cf_32, cf_32$TransactionAmount >= 500)
+
+
+b.cfscore <- subset(merge_ajs, select=c(contributor.cfscore, ID))
+b.cfscore <- rbind(subset(b.cf_30, select=c(contributor.cfscore, ID)),
+                 subset(merge_ajs, select=c(contributor.cfscore, ID)),
+                 subset(b.cf_32, select=c(contributor.cfscore, ID)))
+
+##add median lines
+
+vline.dat <- data.frame("ID"=levels(factor(b.cfscore$ID)), "vl"=c(median(b.cfscore$contributor.cfscore[b.cfscore$ID=="Americans for Job Security"], na.rm=T), median(b.cfscore$contributor.cfscore[b.cfscore$ID=="Proposition 30 Donors"], na.rm=T),  median(b.cfscore$contributor.cfscore[b.cfscore$ID=="Proposition 32 Donors"], na.rm=T)))
+
+
+ggplot(b.cfscore, aes(contributor.cfscore, fill = ID)) + geom_density(adjust=2/5,alpha = 0.2) + 
+  xlab("Donor CF Scores") + theme(legend.position="none") +
+  geom_vline(data=vline.dat, aes(xintercept=vl), linetype="dashed") + 
+  facet_grid(ID ~ .)
+
+
+```
+
+
+
+One may wonder if these differences in means are simply a relic of large donors donating to a more ideologically disparate set of candidates and causes, thus making them look more moderate by virtue of how the Bonica cf scores are calculated [see @Bonica2014]. To test this, I subset the data of those financially backing the No on Proposition 30 and Yes on Proposition 32 campaigns to only donors who gave \$500 or more. Doing so leaves about `r signif(nrow(subset(No_30, No_30$TransactionAmount >= 500))/nrow(No_30), 3) *100` percent of the donors from those giving to the No on 30 campaign and about `r signif(nrow(subset(Yes_32, Yes_32$TransactionAmount >= 500))/nrow(Yes_32), 3) * 100` percent of those giving to the Yes on Proposition 32 campaign. 
+
+
+Plotting the same distribution of ideologies, one sees a similar distribution as before when the full universe of traditional donors was depicted, (see Figure 7.) This further supports the claim that the distinction between these groups is not the result of some idiosyncrasy of large dollar donors, but rather an actual difference in ideology between the groups. 
+
+
+Performing the same two-tailed t-test as before, we find similar results between Americans for Job Security donors and large donors to both the No on Proposition 30, (M=`r signif((t.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$estimate[1], 3)`, SD=`r signif(sd(b.cf_30$contributor.cfscore, na.rm=T), 3)`); $t(`r signif((t.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$parameter, 3)`)=`r signif((t.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic, 3)`, p=`r signif((t.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value, 3)`$; and Yes on Proposition 32 campaigns, (M=`r signif((t.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$estimate[1], 3)`, SD=`r signif(sd(b.cf_32$contributor.cfscore, na.rm=T), 3)`); $t(`r signif((t.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$parameter, 3)`)=`r signif((t.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic, 3)`, p=`r signif((t.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value, 3)`$.
+
+Similarly, the results of a Kolmogorov-Smirnov test show that the AJS donors and large donors to the No on Proposition 30 campaign--$D=`r signif((ks.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r signif((ks.test(b.cf_30$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value,3)`$--and the Yes on Proposition 32 campaign--$D=`r signif((ks.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$statistic,3)`, p=`r signif((ks.test(b.cf_32$contributor.cfscore, merge_ajs$contributor.cfscore, alternative="two.sided"))$p.value,3)`$--are drawn from different population distributions. 
+
+
+##References:
+\sloppy
