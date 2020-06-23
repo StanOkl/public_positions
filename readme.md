@@ -1,4 +1,4 @@
-List of Files.
+## List of Files.
 1. public_positions_replication_code.R: Replication code to produce the figures in the paper.
 2. public_position_rp.Rmd: Rmarkdown file to produce the entire paper, including calculations done in text.
 3. other_2011.csv: Donors to all ballot initiatives in CA during the 2012 cycle. Data from Maplight.org at http://data.maplight.org/CA/2011/records/other.zip
